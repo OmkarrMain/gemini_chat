@@ -10,7 +10,7 @@ document.getElementById('send-button').addEventListener('click', function () {
     })
         .then(response => response.json())
         .then(data => {
-            // Update chat history with the new data
+    
             var chatHistoryDiv = document.getElementById('chat-history');
             chatHistoryDiv.innerHTML = '';
             data.chat_history.forEach(message => {
